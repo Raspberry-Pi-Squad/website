@@ -1,2 +1,2 @@
 # website
-This repository contain the website code
+This repository is about the website.
