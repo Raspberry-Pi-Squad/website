@@ -1,0 +1,61 @@
+/*
+    CSS Variables
+*/
+
+:root {
+    --main-color: hsla(0, 0, 0, 0);
+    --accent-color: hsla(0, 0, 0, 0);
+    --dark-color: hsla(0, 0, 0, 0);
+    --light-color: hsla(0, 0, 0, 0);
+    --title-font: Helvetica;
+    --subtitle-font: Helvetica;
+    --paragraph-font: Helvetica;
+}
+
+/*
+    CSS Reset
+*/
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a, li {
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+/*
+    Global Styles
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+}
+
+li {
+    font-family: var(--subtitle-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+/*
+    Main Layout
+*/
+
