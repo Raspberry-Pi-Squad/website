@@ -3,11 +3,11 @@
 */
 
 :root {
-    --main-color: hsla(0, 0, 0, 0);
-    --accent-color: hsla(0, 0, 0, 0);
-    --dark-color: hsla(0, 0, 0, 0);
-    --light-color: hsla(0, 0, 0, 0);
-    --title-font: Helvetica;
+    --main-color: hsla(144, 88%, 30%, 1);
+    --accent-color: hsla(337, 100%, 50%, 1);
+    --dark-color: hsla(0, 0%, 12%, 1);
+    --light-color: hsla(0, 0%, 100%, 1);
+    --title-font: "Cedarville Cursive", cursive;
     --subtitle-font: Helvetica;
     --paragraph-font: Helvetica;
 }
@@ -19,6 +19,7 @@
 body {
     box-sizing: border-box;
     min-height: 100vh;
+    background-color: var(--dark-color);
 }
 
 *, *::before, *::after {
@@ -59,3 +60,83 @@ p {
     Main Layout
 */
 
+/*
+    Navigation
+*/
+
+nav {
+    background-color: var(--main-color);
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+
+nav ul li {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+nav ul li:hover a {
+    color: var(--dark-color);
+}
+
+nav ul li a {
+    font-weight: 800;
+    transition: color 400ms ease-in-out;
+}
+
+nav ul li img {
+    height: auto;
+    width: 3em;
+}
+
+nav ul li:hover img {
+    cursor: default;
+}
+
+
+/*
+    Landing Section
+*/
+
+section.landing {
+    text-align: center;
+    padding: 0.25em;
+    margin-top: 4em;
+}
+
+section.landing div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+section.landing div button {
+    padding: 0.25em;
+    font-family: var(--subtitle-font);
+    font-weight: 600;
+    font-size: 1.5em;
+    background-color: var(--dark-color);
+    color: var(--main-color);
+    border: 0.1em var(--accent-color) solid;
+    border-radius: 0.5em;
+    transition: color 400ms ease-in-out;
+}
+
+section.landing div button:hover {
+    cursor: pointer;
+    color: var(--light-color);
+}
+
+section.landing h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
