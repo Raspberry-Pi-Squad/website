@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/homepage.css">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <img src="./RPi-Logo.png" alt="blob">
+            <a href="#">
+                <button type="button">link</button>
+            </a>
+            <a href="#">
+                <button type="button">link</button>
+            </a>
+            <a href="#">
+                <button type="button">link</button>
+            </a>
+            <a href="#">
+                <button type="button">link</button>
+            </a>
+            <a href="#">
+                <button type="button">link</button>
+            </a>
+        </div>
+
+        <div class="middle">
+            <a href="#">
+                <button type="button">link</button>
+            </a>
+            <a href="#">
+                <button type="button">link</button>
+            </a>
+            <h1>Join Raspberry pi squad!</h1>
+        </div>
+    </body>
+</html>
