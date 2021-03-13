@@ -3,4 +3,5 @@ This repository is about the website for the Discord server.
 ***
 ## Tasks
 - [x] Assemble Team
-- [ ] Work Together
+- [x] Work Together
+- [ ] Work on the models 
