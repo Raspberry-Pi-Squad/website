@@ -1,0 +1,26 @@
+{
+  "name": "raspberry-pi-squad",
+  "version": "1.0.0",
+  "description": "Website for discord server",
+  "main": "index.html",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raspberry-Pi-Squad/website.git"
+  },
+  "keywords": [
+    "rpi"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raspberry-Pi-Squad/website/issues"
+  },
+  "homepage": "https://github.com/Raspberry-Pi-Squad/website#readme"
+}
