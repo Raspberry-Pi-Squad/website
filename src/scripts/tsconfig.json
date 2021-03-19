@@ -6,7 +6,6 @@
         "module": "commonjs",
         "strictNullChecks": true,
         "strictPropertyInitialization": true,
-        "strictFunctionTypes": true,
-        "noImplicitAny": true
+        "strictFunctionTypes": true
     }
 }
