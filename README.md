@@ -4,4 +4,6 @@ This repository is about the website for the Discord server.
 ## Tasks
 - [x] Assemble Team
 - [x] Work Together
-- [ ] Work on the models 
+- [X] Work on the models 
+- [ ] Configure LiveShare
+- [ ] Do the HTML code
