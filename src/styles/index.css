@@ -20,6 +20,9 @@ body {
     box-sizing: border-box;
     min-height: 100vh;
     background-color: var(--dark-color);
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(rgba(165, 86, 64, 0), rgba(228, 187, 149, 0.5)),
+                  url("../assets/images.png");
 }
 
 *, *::before, *::after {
@@ -139,4 +142,27 @@ section.landing div button:hover {
 section.landing h1 {
     font-size: 3em;
     margin: 0.5em 0;
+}
+
+.join{
+    padding-left: 800px;
+    width: 100%;
+    height: inherit;
+}
+
+.join a {
+    font-size: 45px;
+    background-color: var(--dark-color);
+    border: 50px;
+    border-radius: 50px;
+    height: 10px;
+}
+
+.img{
+    display: none;
+}
+
+.big_text {
+    font-size: 100px;
+    background-position-y: 50px;
 }
