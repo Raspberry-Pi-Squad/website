@@ -155,7 +155,7 @@ section.landing h1 {
     height: inherit;
 }
 
-.join button {
+.join .Join_Button {
     background-color: var(--Join-Button-Color);
     border: var(--dark-color);
     color: var(--Join-Button-TextColor);
@@ -163,6 +163,11 @@ section.landing h1 {
     width: 500px;
     height: 75px;
     border-radius: 15px 15px 10px;
+    transition: background-color 420ms;
+}
+
+.join .Join_Button:hover{
+    background-color: rgb(72, 72, 241);
 }
 
 .img{
