@@ -7,6 +7,8 @@
     --accent-color: hsla(337, 100%, 50%, 1);
     --dark-color: hsla(0, 0%, 12%, 1);
     --light-color: hsla(0, 0%, 100%, 1);
+    --Join-Button-Color: rgb(0, 26, 110);
+    --Join-Button-TextColor: hsla(0, 0%, 100%, 1)
     --title-font: "Cedarville Cursive", cursive;
     --subtitle-font: Helvetica;
     --paragraph-font: Helvetica;
@@ -21,8 +23,7 @@ body {
     min-height: 100vh;
     background-color: var(--dark-color);
     font-family: 'Open Sans', sans-serif;
-    background-image: linear-gradient(rgba(165, 86, 64, 0), rgba(228, 187, 149, 0.5)),
-                  url("../assets/images.png");
+    color: white;
 }
 
 *, *::before, *::after {
@@ -144,25 +145,34 @@ section.landing h1 {
     margin: 0.5em 0;
 }
 
+/* 
+    @Someonewho2 CSS code
+*/
+
 .join{
-    padding-left: 800px;
+    padding-left: 670px;
     width: 100%;
     height: inherit;
 }
 
-.join a {
-    font-size: 45px;
-    background-color: var(--dark-color);
-    border: 50px;
-    border-radius: 50px;
-    height: 10px;
+.join button {
+    background-color: var(--Join-Button-Color);
+    border: var(--dark-color);
+    color: var(--Join-Button-TextColor);
+    font-size: 50px;
+    width: 500px;
+    height: 75px;
+    border-radius: 15px 15px 10px;
 }
 
 .img{
-    display: none;
+   display: none;
 }
 
 .big_text {
     font-size: 100px;
-    background-position-y: 50px;
+    text-align: center;
+    padding-top: 200px;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
