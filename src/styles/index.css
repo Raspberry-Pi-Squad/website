@@ -214,6 +214,8 @@ section.landing h1 {
 }
 
 .row_stat .Box1{
+    position: relative;
+    top: 50px;
     width: 300px;
     font-size: 100px;
     border: none;
@@ -240,8 +242,8 @@ section.landing h1 {
     background-color: white;
     color: rgb(81, 124, 241);
     position: relative;
-    left: 1550px;
-    bottom: 200px;
+    left: 1500px;
+    bottom: 240px;
 }
 
 .row_stat .row_description2{
@@ -262,7 +264,7 @@ section.landing h1 {
     color: rgb(81, 124, 241);
     padding-left: 30px;
     position: relative;
-    bottom: 600px;
+    bottom: 520px;
 }
 
 .row_stat .row_description3{
