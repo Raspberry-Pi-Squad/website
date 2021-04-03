@@ -21,7 +21,6 @@
 body {
     box-sizing: border-box;
     min-height: 100vh;
-    background-color:black;
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -149,10 +148,17 @@ section.landing h1 {
     @Someonewho2 CSS code
 */
 
+.home{
+    background-image: url(../assets/BG.jpg);
+    height: 979px;
+    box-sizing: border-box;
+}
+
 .join{
     padding-left: 670px;
     width: 100%;
     height: inherit;
+    background-color:black;
 }
 
 .join .Join_Button {
@@ -180,4 +186,149 @@ section.landing h1 {
     padding-top: 200px;
     color:white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.description{
+    background-image: radial-gradient(blue,rgb(72, 70, 187));
+    height: 979px;
+    box-sizing: border-box;
+}
+
+.description .paragraph{
+    color:white;
+    font-size: 30px;
+    text-align: right;
+    padding-top: 300px;
+    margin: 100px;
+    text-decoration: underline;
+}
+
+.description .paragraph br{
+    margin: 5px;
+}
+
+.stats{
+    background-color: black;
+    height: 979px;
+    box-sizing: border-box;
+}
+
+.row_stat .Box1{
+    width: 300px;
+    font-size: 100px;
+    border: none;
+    border-radius: 15px 15px 15px;
+    background-color: white;
+    color: rgb(81, 124, 241);
+    padding-left: 20px;
+}
+
+.row_stat .row_description1{
+    text-align: left;
+    position: relative;
+    bottom: 400px;
+    padding-left: 300px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.row_stat .Box2{
+    width: 300px;
+    font-size: 100px;
+    border: none;
+    border-radius: 15px 15px 15px;
+    background-color: white;
+    color: rgb(81, 124, 241);
+    position: relative;
+    left: 1550px;
+    bottom: 200px;
+}
+
+.row_stat .row_description2{
+    text-align: left;
+    position: relative;
+    bottom: 700px;
+    padding-left: 500px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.row_stat .Box3{
+    width: 300px;
+    font-size: 100px;
+    border: none;
+    border-radius: 15px 15px 15px;
+    background-color: white;
+    color: rgb(81, 124, 241);
+    padding-left: 30px;
+    position: relative;
+    bottom: 600px;
+}
+
+.row_stat .row_description3{
+    text-align: left;
+    position: relative;
+    bottom: 1050px;
+    right: 190px;
+    padding-left: 500px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.row_stat .L1{
+    position: relative;
+    left: 1500px;
+    bottom: 205px;
+    height: 300px;
+    width: 10px;
+    border: solid blue 1px;
+    background-color: blue;
+}
+
+.row_stat .L2{
+    border: solid blue 1px;
+    position: relative;
+    bottom: 205px;
+    left: 420px;
+    width: 1090px;
+    height: 10px;
+    background-color: blue;
+}
+
+.row_stat .L3{
+    position: relative;
+    bottom: 490px;
+    left: 420px;
+    height: 300px;
+    width: 10px;
+    border: solid blue 1px;
+    background-color: blue;
+}
+
+.row_stat .L4{
+    border: solid blue 1px;
+    position: relative;
+    bottom: 500px;
+    left: 420px;
+    width: 1090px;
+    height: 10px;
+    background-color: blue;
+}
+
+.row_stat .L5{
+    position: relative;
+    bottom: 820px;
+    left: 1500px;
+    border: solid blue 1px;
+    background-color: blue;
+    width: 10px;
+    height: 384px;
+}
+
+.join_message{
+    display: none;
+}
+
+.informations{
+    display: none;
 }
