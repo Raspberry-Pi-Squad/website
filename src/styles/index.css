@@ -7,8 +7,8 @@
     --accent-color: hsla(337, 100%, 50%, 1);
     --dark-color: hsla(0, 0%, 12%, 1);
     --light-color: hsla(0, 0%, 100%, 1);
-    --Join-Button-Color: rgb(0, 26, 110);
-    --Join-Button-TextColor: hsla(0, 0%, 100%, 1)
+    --join-button-color: rgb(0, 26, 110);
+    --join-button-textcolor: hsla(0, 0%, 100%, 1);
     --title-font: "Cedarville Cursive", cursive;
     --subtitle-font: Helvetica;
     --paragraph-font: Helvetica;
@@ -162,9 +162,10 @@ section.landing h1 {
 }
 
 .join .Join_Button {
-    background-color: var(--Join-Button-Color);
+    position: fixed;
+    background-color: var(--join-button-color);
     border: var(--dark-color);
-    color: var(--Join-Button-TextColor);
+    color: var(--join-button-textcolor);
     font-size: 50px;
     width: 500px;
     height: 75px;
@@ -207,125 +208,67 @@ section.landing h1 {
     margin: 5px;
 }
 
+/* Stats Section */
+
 .stats{
     background-color: black;
-    height: 979px;
-    box-sizing: border-box;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+        "a b ."
+        ". c d"
+        "e f .";
+    grid-gap: 0.5em;
 }
 
-.row_stat .Box1{
-    position: relative;
-    top: 50px;
-    width: 300px;
-    font-size: 100px;
-    border: none;
-    border-radius: 15px 15px 15px;
+.box1, .box2, .box3 {
     background-color: white;
-    color: rgb(81, 124, 241);
-    padding-left: 20px;
+    color: blue;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 0 0.5em 0.5em 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: min(200px);
+    height: min(200px);
 }
 
-.row_stat .row_description1{
-    text-align: left;
-    position: relative;
-    bottom: 400px;
-    padding-left: 300px;
-    margin-left: 10px;
+.box1 {
+    grid-area: a;
+}
+
+.box2{
+    grid-area: d;
+    border-radius: 0.5em 0 0 0.5em;
+    margin-left: 420px;
+}
+
+.box3{
+    grid-area: e;
+}
+
+.row_description1, .row_description2, .row_description3 {
     font-size: 30px;
+    align-self: center;
 }
 
-.row_stat .Box2{
-    width: 300px;
-    font-size: 100px;
-    border: none;
-    border-radius: 15px 15px 15px;
-    background-color: white;
-    color: rgb(81, 124, 241);
-    position: relative;
-    left: 1500px;
-    bottom: 240px;
+.row_description1{
+    grid-area: b;
 }
 
-.row_stat .row_description2{
-    text-align: left;
-    position: relative;
-    bottom: 700px;
-    padding-left: 500px;
-    margin-left: 10px;
-    font-size: 30px;
+.row_description2{
+    grid-area: d;
+    text-align: right;
+    padding-right: 210px;
 }
 
-.row_stat .Box3{
-    width: 300px;
-    font-size: 100px;
-    border: none;
-    border-radius: 15px 15px 15px;
-    background-color: white;
-    color: rgb(81, 124, 241);
-    padding-left: 30px;
-    position: relative;
-    bottom: 520px;
+.row_description3{
+    grid-area: f;
 }
 
-.row_stat .row_description3{
-    text-align: left;
-    position: relative;
-    bottom: 1050px;
-    right: 190px;
-    padding-left: 500px;
-    margin-left: 10px;
-    font-size: 30px;
-}
-
-.row_stat .L1{
-    position: relative;
-    left: 1500px;
-    bottom: 205px;
-    height: 300px;
-    width: 10px;
-    border: solid blue 1px;
-    background-color: blue;
-}
-
-.row_stat .L2{
-    border: solid blue 1px;
-    position: relative;
-    bottom: 205px;
-    left: 420px;
-    width: 1090px;
-    height: 10px;
-    background-color: blue;
-}
-
-.row_stat .L3{
-    position: relative;
-    bottom: 490px;
-    left: 420px;
-    height: 300px;
-    width: 10px;
-    border: solid blue 1px;
-    background-color: blue;
-}
-
-.row_stat .L4{
-    border: solid blue 1px;
-    position: relative;
-    bottom: 500px;
-    left: 420px;
-    width: 1090px;
-    height: 10px;
-    background-color: blue;
-}
-
-.row_stat .L5{
-    position: relative;
-    bottom: 820px;
-    left: 1500px;
-    border: solid blue 1px;
-    background-color: blue;
-    width: 10px;
-    height: 384px;
-}
 
 .join_message{
     display: none;
