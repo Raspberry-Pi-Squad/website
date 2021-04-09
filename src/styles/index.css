@@ -236,7 +236,6 @@ section.landing h1 {
 
 .number_title{
     color: var(--join-button-color);
-    font-size: 3em;
     border-radius: 15%;
     text-align: center;
     padding: 15px;
