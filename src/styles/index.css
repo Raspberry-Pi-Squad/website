@@ -261,7 +261,23 @@ section.landing h1 {
 }
 
 .join_message{
-    display: none;
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-size: 3vh;
+}
+
+.join_message .Message{
+  border: solid green;
+  border-radius: 1vh;
+  width: 60vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
 
 .informations{
