@@ -148,14 +148,13 @@ section.landing h1 {
 }
 
 /*
-    @Someonewho2 CSS code
+    @Someonewho2 CSS code :D
 */
 
 .home{
     background-image: url(../assets/RPS-logo.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-color: black;
     height: 100vh;
     box-sizing: border-box;
@@ -175,7 +174,7 @@ section.landing h1 {
     position: fixed;
     background-color: var(--join-button-color);
     color: var(--join-button-textcolor);
-    font-size: 2em;
+    font-size: 3.33vw;
     padding: 0 15px 5px 15px;
     border-radius: 0 0 20px 20px;
     transition: background-color 420ms;
@@ -191,7 +190,7 @@ section.landing h1 {
 }
 
 .big_text {
-    font-size: 6em;
+    font-size: 10vh;
     text-align: center;
     color:white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -228,7 +227,6 @@ section.landing h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: row;
-    margin: 1em;
     font-size: 2em;
 }
 
@@ -237,18 +235,18 @@ section.landing h1 {
 }
 
 .number_title{
-    background-color: white;
     color: var(--join-button-color);
     font-size: 3em;
     border-radius: 15%;
-    width: 10vw;
-    height: 15vh;
     text-align: center;
     padding: 15px;
+    background-color: white;
+    font-size: 15vh;
+
 }
 
 .row_description{
-    font-size: 1em;
+    font-size: min(1em);
     font-weight: bold;
     display: flex;
     align-items: center;
