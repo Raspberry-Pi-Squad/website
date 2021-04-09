@@ -27,12 +27,13 @@
 
 		<!-- Join us on Discord button -->
 		<header class="join">
-			<!-- Maybe add target=""_blank" -->
 			<button type="button" class="Join_Button">
 				<a href="https://discord.gg/J4Vz4W4">Join us on Discord !</a>
 			</button>
 		</header>
 
+
+		<!-- Don't do this section for now. -->
 		<!--
 			@Soemonewho2, the next part will be tricky for you :
 			You need to make sure that the zone described by the <map> coincide with the image.
@@ -58,22 +59,18 @@
 				You need to code a script that change the image when the top of the user's screen reach the top of a section (#home, #description, #stats, etc...)So the blue point will always indicate where the user is.
 			-->
 
-			<img usemap="#page_count" src="src/assets/count/1.png" alt="Page count" class="img" />
+			<img usemap="#page_count" src="./src/assets/count/1.png" alt="Page count" class="img" />
 		</footer>
 
 
-		<!-- The home section -->
+		<!-- @MrCookieFries, could you do a parallax effect with the h1 please. -->
 		<section class="home">
-			<!-- Big title please -->
 			<h1 class="big_text">Raspberry Pi<br />Squad</h1>
 		</section>
 
 
-		<!-- The description section -->
 		<section class="description">
-
-			<!-- Even if it is not recommended, I think it is better not to have an alt text because it should look better. -->
-			<img href="src/assets/people.png" alt="" class="big_image" />
+			<img href="./src/assets/people.png" alt="" class="big_image" />
 
 			<h2 class="paragraph">
 				We are a friendly Raspberry Pi community.
@@ -84,38 +81,36 @@
 			</h2>
 		</section>
 
-
-		<!-- The stats section -->
+		<!-- We need to do the line -->
 		<section class="stats">
 
-			<div class="box1">
-				<h1 class="sixtysix">66</h1>
+			<div id="box1">
+				<h1 class="number_title">66</h1>
+				<p class="row_description">
+					We are an active and enthusiastic community.<br />
+					The server has 8 bots (Hydra, EPIC RPG, dyno, etc...) for maximum fun.				
+				</p>
 			</div>
-			<div class="box2">
-				<h1 class="ThrityNine">39</h1>
+			<div id="box2">
+				<h1 class="number_title">39</h1>
+				<p class="row_description">
+					We have 39 funny blobs emojis and if you join us, I am sure you will have a great time.
+				</p>
 			</div>
-			<div class="box3">
-				<h1 class="Thirteen">13</h1>
+			<div id="box3">
+				<h1 class="number_title">13</h1>
+				<p class="row_description">
+					You can ask for help in 13 text/voice topics channels like "beginners", "projects", "linux",...
+					<br />
+					You can also relax on the chill section.
+				</p>
 			</div>
 
-			<p class="row_description1">
-				We are an active and enthusiastic community.<br>
-				The server has 8 bots (Hydra, EPIC RPG, dyno, etc...) for maximum fun.
-				<br />				
-			</p>
-			</div>
-			<p class="row_description2">
-				We have 39 funny blobs emojis<br> and if you join us, I am sure you<br /> will have a great time.
-			</p>
-			<p class="row_description3">
-				You can ask for help in 13 text/voice topics channels like "beginners", "projects", "linux",<br />...
-				You can also relax on the chill section.
-			</p>
 			
 		</section>
 
 
-		<!-- The join message -->
+		<!-- We need to do the end of the line -->
 		<section class="join_message">
 			<p>
 				-- -- <b>Ｒａｓｐｂｅｒｒｙ Ｐｉ Ｓｑｕａｄ</b> -- --
@@ -138,9 +133,6 @@
 
 				-- -- <b>Ｒａｓｐｂｅｒｒｙ Ｐｉ Ｓｑｕａｄ</b> -- --
 			</p>
-			<div id="line">
-				<!-- I don't know what I should do in this div. I think it is the CSS to make the things. -->
-			</div>
 		</section>
 
 
