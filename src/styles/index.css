@@ -177,7 +177,7 @@ section.landing h1 {
 .join .Join_Button {
     background-color: var(--join-button-color);
     color: var(--join-button-textcolor);
-    font-size: 2em;
+    font-size: 3.33vw;
     padding: 0 15px 5px 15px;
     border-radius: 0 0 20px 20px;
     transition: background-color 420ms;
@@ -252,7 +252,7 @@ section.landing h1 {
 }
 
 .row_description{
-    font-size: 1em;
+    font-size: min(1em);
     font-weight: bold;
     display: flex;
     align-items: center;
