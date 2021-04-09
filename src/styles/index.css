@@ -175,6 +175,7 @@ section.landing h1 {
     background-color: var(--join-button-color);
     color: var(--join-button-textcolor);
     font-size: 3.33vw;
+    padding: 0 15px 5px 15px;
     border-radius: 0 0 20px 20px;
     transition: background-color 420ms;
     border: 0;
@@ -202,6 +203,11 @@ section.landing h1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.big_image{
+  width: 30%;
+  height: auto;
 }
 
 .description .paragraph{
