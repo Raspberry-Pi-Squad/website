@@ -21,6 +21,7 @@
 body {
     box-sizing: border-box;
     min-height: 100vh;
+    min-width: 100vh
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -151,23 +152,20 @@ section.landing h1 {
 */
 
 .home{
-    background-image: url(../assets/BG.jpg);
-    height: 979px;
-    width: 100%;
-    box-sizing: border-box
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-areas:
-    ". . a . ."
-    ". . . . ."
-    ". . . . ."
+  background-image: url(../assets/BG.jpg);
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .join{
-    padding-left: 670px;
-    width: 100%;
     height: inherit;
     background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .join .Join_Button {
@@ -196,15 +194,20 @@ section.landing h1 {
 .big_text {
     font-size: 100px;
     text-align: center;
-    padding-top: 200px;
     color:white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .description{
-    background-image: radial-gradient(blue,rgb(72, 70, 187));
-    height: 979px;
-    box-sizing: border-box;
+  display: flex;
+  background-image: radial-gradient(blue,rgb(72, 70, 187));
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: right;
+  padding-bottom: 5vh;
 }
 
 .description .paragraph{
@@ -283,7 +286,7 @@ section.landing h1 {
 
 
 .join_message{
-    display: grid;
+    display: flex;
     background-color: black;
     color: white;
     width: 100%;
@@ -297,7 +300,9 @@ section.landing h1 {
   border-radius: 1vh;
   width: 60vh;
   text-align: center;
-  grid-area: a;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
 
 .informations{
