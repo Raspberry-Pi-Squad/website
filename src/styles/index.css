@@ -20,8 +20,7 @@
 
 body {
     box-sizing: border-box;
-    min-height: 100vh;
-    min-width: 100vh
+    /* I deleted theses lines because it was incorrect */
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -169,12 +168,10 @@ section.landing h1 {
     justify-content: center;
     height: inherit;
     background-color:black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.join .Join_Button {
+.join .Join_Button{
+    position: fixed;
     background-color: var(--join-button-color);
     color: var(--join-button-textcolor);
     font-size: 3.33vw;
@@ -197,9 +194,6 @@ section.landing h1 {
     text-align: center;
     color:white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .description{
@@ -242,7 +236,6 @@ section.landing h1 {
 
 .number_title{
     color: var(--join-button-color);
-    font-size: 3em;
     border-radius: 15%;
     text-align: center;
     padding: 15px;
@@ -252,12 +245,9 @@ section.landing h1 {
 }
 
 .row_description{
-    font-size: min(1em);
+    font-size: auto;
     font-weight: bold;
-    display: flex;
     align-items: center;
-    padding-left: 2vw;
-    width: 60vw;
 }
 
 #box2 .row_description{
