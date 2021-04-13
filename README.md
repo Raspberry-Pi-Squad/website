@@ -7,5 +7,5 @@ This repository is about the website for the Discord server.
 - [X] Work on the models
 - [X] Configure LiveShare
 - [x] Do the HTML code
-- [] Make the last page
-- [] Finishing touches
+- [ ] Make the last page
+- [ ] Finishing touches
