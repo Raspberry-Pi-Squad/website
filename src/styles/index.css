@@ -312,6 +312,29 @@ section.landing h1 {
   font-size: 18px;
 }
 
-.informations{
-    display: none;
+.review{
+  display: flex;
+  background-color: black;
+}
+
+.Tekknow, .Soemonewho2, .Dingbot-magic, .Protege{
+  margin: 10px;
+  border: solid #77a1bf;
+  border-radius: 15px;
+  text-align: center;
+  font-family: inherit;
+  min-width: 20vw;
+  min-height: 10vh;
+}
+
+.pfp{
+  max-width: 64px;
+  max-height: 64px;
+  margin-top: 10px
+}
+
+@media only screen and (max-width: 768px) {
+  .Tekknow, .Soemonewho2, .Dingbot-magic, .Protege{
+    font-size: 12px;
+  }
 }
