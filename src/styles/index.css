@@ -151,11 +151,15 @@ section.landing h1 {
     @Someonewho2 CSS code :D
 */
 
+/*
+    Home
+*/
 .home{
     background-image: url(../assets/RPS-logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
+    background-attachment: fixed;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
@@ -163,6 +167,9 @@ section.landing h1 {
     justify-content: center;
 }
 
+/*
+    Join button
+*/
 .join{
     display: flex;
     justify-content: center;
@@ -202,8 +209,12 @@ section.landing h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+/*
+    Description
+*/
+
 .description{
-    background-image: radial-gradient(blue,rgb(72, 70, 187));
+    background-image: linear-gradient(225deg, rgba(0,0,250,1) 0%, rgba(128,0,128,1) 100%); /* Change the gradient for a nicer one */
     height: 60vh;
     box-sizing: border-box;
     display: flex;
@@ -231,7 +242,9 @@ section.landing h1 {
   }
 }
 
-/* Stats Section */
+/*
+    Stats Section
+*/
 
 .stats{
     background-color: black;
@@ -246,7 +259,9 @@ section.landing h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: row;
+    align-items: center;
     font-size: 2em;
+    padding: 0 2vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -273,6 +288,8 @@ section.landing h1 {
     font-size: auto;
     font-weight: bold;
     align-items: center;
+    max-width: 65vw;
+    padding-left: 2vw;
 }
 
 #box2 .row_description{
@@ -281,16 +298,9 @@ section.landing h1 {
     text-align: right;
 }
 
-.join_message{
-    display: flex;
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    font-size: 3vh;
-}
-
+/*
+    Join message
+*/
 
 .join_message{
     display: flex;
@@ -302,22 +312,37 @@ section.landing h1 {
     font-size: 3vh;
 }
 
-.join_message .Message{
-  border: solid green;
-  border-radius: 1vh;
-  width: 60vh;
-  text-align: center;
+.message{
+  border: solid var(--main-color);
+  border-radius: 20px 20px 0 0;
+  width: 75vw;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 1em;
+  padding: 7.5% 5%;
 }
 
-.review{
+/*
+    Review
+*/
+
+.reviews {
   display: flex;
+  flex-direction: column;
   background-color: black;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
 }
 
-.Tekknow, .Soemonewho2, .Dingbot-magic, .Protege{
+#reviews {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10% 0;
+}
+
+.review {
   margin: 10px;
   border: solid #77a1bf;
   border-radius: 15px;
@@ -334,7 +359,7 @@ section.landing h1 {
 }
 
 @media only screen and (max-width: 768px) {
-  .Tekknow, .Soemonewho2, .Dingbot-magic, .Protege{
+  .review{
     font-size: 12px;
   }
 }
