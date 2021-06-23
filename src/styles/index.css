@@ -1,110 +1,109 @@
 /*
-    CSS Variables
+  CSS Variables
 */
 
 :root {
-    --main-color: hsla(144, 88%, 30%, 1);
-    --accent-color: hsla(337, 100%, 50%, 1);
-    --dark-color: hsla(0, 0%, 12%, 1);
-    --light-color: hsla(0, 0%, 100%, 1);
-    --join-button-color: rgb(0, 26, 110);
-    --join-button-textcolor: hsla(0, 0%, 100%, 1);
-    --title-font: "Cedarville Cursive", cursive;
-    --subtitle-font: Helvetica;
-    --paragraph-font: Helvetica;
+  --main-color: hsla(144, 88%, 30%, 1);
+  --accent-color: hsla(337, 100%, 50%, 1);
+  --dark-color: hsla(0, 0%, 12%, 1);
+  --light-color: hsla(0, 0%, 100%, 1);
+  --join-button-color: rgb(0, 26, 110);
+  --join-button-textcolor: hsla(0, 0%, 100%, 1);
+  --title-font: "Cedarville Cursive", cursive;
+  --subtitle-font: Helvetica;
+  --paragraph-font: Helvetica;
 }
 
 /*
-    CSS Reset
+  CSS Reset
 */
 
 body {
-    box-sizing: border-box;
-    /* I deleted theses lines because it was incorrect */
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  overflow-x: hidden;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 a, li {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 /*
-    Global Styles
+  Global Styles
 */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--title-font);
+  font-family: var(--title-font);
 }
 
 li {
-    font-family: var(--subtitle-font);
+  font-family: var(--subtitle-font);
 }
 
 p {
-    font-family: var(--paragraph-font);
+  font-family: var(--paragraph-font);
 }
 
 /*
-    Main Layout
+  Main Layout
 */
 
 /*
-    Navigation
+  Navigation
 */
 
 nav {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 nav ul {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
 }
 
 nav ul li {
-    text-align: center;
-    font-size: 1.2em;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 nav ul li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 nav ul li:hover a {
-    color: var(--dark-color);
+  color: var(--dark-color);
 }
 
 nav ul li a {
-    font-weight: 800;
-    transition: color 400ms ease-in-out;
+  font-weight: 800;
+  transition: color 400ms ease-in-out;
 }
 
 nav ul li img {
-    height: auto;
-    width: 3em;
+  height: auto;
+  width: 3em;
 }
 
 nav ul li:hover img {
-    cursor: default;
+  cursor: default;
 }
 
 
@@ -113,38 +112,38 @@ nav ul li:hover img {
 */
 
 section.landing {
-    text-align: center;
-    padding: 0.25em;
-    margin-top: 4em;
+  text-align: center;
+  padding: 0.25em;
+  margin-top: 4em;
 }
 
 section.landing div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
 }
 
 section.landing div button {
-    padding: 0.25em;
-    font-family: var(--subtitle-font);
-    font-weight: 600;
-    font-size: 1.5em;
-    background-color: var(--dark-color);
-    color: var(--main-color);
-    border: 0.1em var(--accent-color) solid;
-    border-radius: 0.5em;
-    transition: color 400ms ease-in-out;
+  padding: 0.25em;
+  font-family: var(--subtitle-font);
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: var(--dark-color);
+  color: var(--main-color);
+  border: 0.1em var(--accent-color) solid;
+  border-radius: 0.5em;
+  transition: color 400ms ease-in-out;
 }
 
 section.landing div button:hover {
-    cursor: pointer;
-    color: var(--light-color);
+  cursor: pointer;
+  color: var(--light-color);
 }
 
 section.landing h1 {
-    font-size: 3em;
-    margin: 0.5em 0;
+  font-size: 3em;
+  margin: 0.5em 0;
 }
 
 /*
@@ -155,37 +154,37 @@ section.landing h1 {
     Home
 */
 .home{
-    background-image: url(../assets/RPS-logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: black;
-    background-attachment: fixed;
-    height: 100vh;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-image: url(../assets/RPS-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-attachment: fixed;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*
     Join button
 */
 .join{
-    display: flex;
-    justify-content: center;
-    height: inherit;
-    background-color:black;
+  display: flex;
+  justify-content: center;
+  height: inherit;
+  background-color:black;
 }
 
 .join .Join_Button{
-    position: fixed;
-    background-color: var(--join-button-color);
-    color: var(--join-button-textcolor);
-    font-size: 60.66px;
-    padding: 0 15px 5px 15px;
-    border-radius: 0 0 20px 20px;
-    transition: background-color 420ms;
-    border: 0;
+  position: fixed;
+  background-color: var(--join-button-color);
+  color: var(--join-button-textcolor);
+  font-size: 60.66px;
+  padding: 0 15px 5px 15px;
+  border-radius: 0 0 20px 20px;
+  transition: background-color 420ms;
+  border: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -195,18 +194,18 @@ section.landing h1 {
 }
 
 .join .Join_Button:hover{
-    background-color: rgb(72, 72, 241);
+  background-color: rgb(72, 72, 241);
 }
 
 .img{
-   display: none;
+  display: none;
 }
 
 .big_text {
-    font-size: 10vh;
-    text-align: center;
-    color:white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 10vh;
+  text-align: center;
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /*
@@ -214,12 +213,12 @@ section.landing h1 {
 */
 
 .description{
-    background-image: linear-gradient(225deg, rgba(0,0,250,1) 0%, rgba(128,0,128,1) 100%); /* Change the gradient for a nicer one */
-    height: 60vh;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  background-image: linear-gradient(225deg, rgba(0,0,250,1) 0%, rgba(128,0,128,1) 100%); /* Change the gradient for a nicer one */
+  height: 60vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .big_image{
@@ -229,11 +228,11 @@ section.landing h1 {
 }
 
 .description .paragraph{
-    color:white;
-    font-size: 2em;
-    text-align: right;
-    text-decoration: underline;
-    margin: 10px
+  color:white;
+  font-size: 2em;
+  text-align: right;
+  text-decoration: underline;
+  margin: 10px
 }
 
 @media only screen and (max-width: 768px) {
@@ -247,21 +246,21 @@ section.landing h1 {
 */
 
 .stats{
-    background-color: black;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    justify-content: space-around;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
 }
 
 #box1, #box2, #box3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 2em;
-    padding: 0 2vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2em;
+  padding: 0 2vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -271,31 +270,30 @@ section.landing h1 {
 }
 
 #box2{
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .number_title{
-    color: var(--join-button-color);
-    border-radius: 15%;
-    text-align: center;
-    padding: 15px;
-    background-color: white;
-    font-size: 15vh;
-
+  color: var(--join-button-color);
+  border-radius: 15%;
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  font-size: 15vh;
 }
 
 .row_description{
-    font-size: auto;
-    font-weight: bold;
-    align-items: center;
-    max-width: 65vw;
-    padding-left: 2vw;
+  font-size: auto;
+  font-weight: bold;
+  align-items: center;
+  max-width: 65vw;
+  padding-left: 2vw;
 }
 
 #box2 .row_description{
-    padding-left: 0;
-    padding-right: 2vw;
-    text-align: right;
+  padding-left: 0;
+  padding-right: 2vw;
+  text-align: right;
 }
 
 /*
@@ -303,13 +301,13 @@ section.landing h1 {
 */
 
 .join_message{
-    display: flex;
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    font-size: 3vh;
+  display: flex;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  font-size: 3vh;
 }
 
 .message{
@@ -323,7 +321,7 @@ section.landing h1 {
 }
 
 /*
-    Review
+  Review
 */
 
 * {box-sizing:border-box}
@@ -332,14 +330,10 @@ section.landing h1 {
 .slideshow-container {
   font-size: 48px;
   background-color: black;
-  min-width: 1000px;
-  min-height: 100vh;
+  min-width: 100vw;
+  min-height: 93vh;
   position: relative;
   margin: auto;
-}
-
-.Name{
-    padding-top: 50px;
 }
 
 /* Hide the images by default */
@@ -377,12 +371,18 @@ section.landing h1 {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 0.75em;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
+}
+
+/* The stars */
+.stars {
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 /* Number text (1/3 etc) */
