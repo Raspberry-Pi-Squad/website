@@ -230,6 +230,7 @@ section.landing h1 {
 .description .paragraph{
   color:white;
   font-size: 2em;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   text-align: right;
   text-decoration: underline;
   margin: 10px
@@ -280,6 +281,7 @@ section.landing h1 {
   padding: 15px;
   background-color: white;
   font-size: 15vh;
+  font-family: Terminus, Times, 'Times New Roman', serif;
 }
 
 .row_description{
