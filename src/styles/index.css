@@ -108,7 +108,7 @@ nav ul li:hover img {
 
 
 /*
-    Landing Section
+  Landing Section
 */
 
 section.landing {
@@ -147,11 +147,11 @@ section.landing h1 {
 }
 
 /*
-    @Someonewho2 CSS code :D
+  @Someonewho2 CSS code :D
 */
 
 /*
-    Home
+  Home
 */
 .home{
   background-image: url(../assets/RPS-logo.png);
@@ -167,7 +167,7 @@ section.landing h1 {
 }
 
 /*
-    Join button
+  Join button
 */
 .join{
   display: flex;
@@ -209,7 +209,7 @@ section.landing h1 {
 }
 
 /*
-    Description
+  Description
 */
 
 .description{
@@ -243,7 +243,7 @@ section.landing h1 {
 }
 
 /*
-    Stats Section
+  Stats Section
 */
 
 .stats{
@@ -261,7 +261,9 @@ section.landing h1 {
   flex-direction: row;
   align-items: center;
   font-size: 2em;
-  padding: 0 2vw;
+  margin: 0 2vw;
+  height: 33.3vh;
+  width: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -272,6 +274,21 @@ section.landing h1 {
 
 #box2{
   flex-direction: row-reverse;
+  height: 33.4
+}
+
+#box1 {
+  border-right: blue solid 10px;
+}
+
+#box2 {
+  border-top: blue solid 10px;
+  border-left: blue solid 10px;
+}
+
+#box3 {
+  border-top: blue solid 10px;
+  border-right: blue solid 10px;
 }
 
 .number_title{
@@ -298,8 +315,12 @@ section.landing h1 {
   text-align: right;
 }
 
+.emoji {
+  height: 1em
+}
+
 /*
-    Join message
+  Join message
 */
 
 .join_message{
@@ -320,6 +341,13 @@ section.landing h1 {
   align-items: center;
   font-size: 1em;
   padding: 7.5% 5%;
+}
+
+#endline {
+  position: absolute;
+  width: 95.2vw;
+  height: 50vh;
+  border-right: blue solid 10px;
 }
 
 /*
