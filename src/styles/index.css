@@ -231,7 +231,7 @@ section.landing h1 {
   margin: 10px
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .description {
     flex-direction: column;
   }
@@ -354,6 +354,12 @@ section.landing h1 {
   align-items: center;
   font-size: 3vh;
   padding: 7.5% 5%;
+}
+
+@media screen and (max-width: 450px) {
+  .message {
+    width: 85vw;
+  }
 }
 
 /* #endline {
