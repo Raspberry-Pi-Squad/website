@@ -154,7 +154,7 @@ section.landing h1 {
   Home
 */
 .home{
-  background-image: url(../assets/RPS-logo.png);
+  background-image: url(../assets/RPS-logo-compressed.png);
   background-position: center;
   background-repeat: no-repeat;
   background-color: black;
